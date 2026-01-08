@@ -1,0 +1,14 @@
+fastapi==0.100.0
+uvicorn==0.22.0
+# Use Pydantic v2 which is compatible with Python 3.13 and recent FastAPI
+pydantic==2.12.3
+
+# Optional: speech packages
+# For local Whisper STT (needs ffmpeg installed separately):
+# pip install -U openai-whisper
+# For TTS (gTTS uses Google TTS):
+gTTS==2.3.2
+# pydub helps with audio conversion (requires ffmpeg on PATH)
+pydub==0.25.1
+# (Optional) Coqui TTS can be used instead of gTTS for offline TTS
+# pip install TTS

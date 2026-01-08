@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Emotion-Aware Digital Twin — Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Emotion-Aware Assistant (MVP)</h1>
+    <div id="chat" class="chat"></div>
+    <div id="bot_status" class="bot-status hidden"></div>
+    <div class="controls">
+      <input id="input" placeholder="Type your message" />
+      <button id="send">Send</button>
+      <button id="mic" title="Hold to record">🎙️</button>
+      <span id="stt_status" class="stt-status"></span>
+      <span id="stt_spinner" class="spinner hidden" aria-hidden="true"></span>
+    </div>
+    <audio id="tts_player" hidden></audio>
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>
